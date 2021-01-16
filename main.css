@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #E8ECF3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.alert {
+  background-color: #2b2b2b;
+  color: cornsilk;
+  padding: 20px;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 10px;
+  opacity: 0;
+  visibility: hidden;
+  right: 5px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.alert.active {
+  bottom: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.alert b {
+  font-size: 19px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+
+ul.color-palette {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
+  padding: 10px;
+}
+
+ul.color-palette li {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 15px 20px;
+  -webkit-box-shadow: 0px -12px 102px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px -12px 102px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+ul.color-palette li:hover {
+  -webkit-box-shadow: 0 15px 42px -12px #A8B2C3;
+          box-shadow: 0 15px 42px -12px #A8B2C3;
+  -webkit-transform: translateY(-12%);
+          transform: translateY(-12%);
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+ul.color-palette li input {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  right: 10px;
+}
+
+ul.color-palette li .color {
+  width: 100%;
+  height: 150px;
+  background: var(--color);
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+ul.color-palette li .text {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background: ivory;
+  border-radius: 15px;
+  padding: 9px;
+  color: #0C1226;
+}
+
+.action {
+  text-align: center;
+}
+
+.action button {
+  width: 393px;
+  height: 68px;
+  background: #7E6CCA;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 12px 102px rgba(81, 37, 241, 0.5);
+          box-shadow: 0px 12px 102px rgba(81, 37, 241, 0.5);
+}
+
+.action p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.shortcut {
+  font-size: 15px;
+  font-weight: normal;
+  background: cornsilk;
+  padding: 14px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  margin-top: 25px;
+  -webkit-box-shadow: 0px -12px 102px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px -12px 102px rgba(0, 0, 0, 0.15);
+}
+/*# sourceMappingURL=main.css.map */
