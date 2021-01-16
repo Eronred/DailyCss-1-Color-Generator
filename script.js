@@ -30,7 +30,7 @@ function getColor() {
             document.execCommand('copy');
             notification('Color <b>' + targetInput.value + '</b> copied to your clipboard')
             document.body.style.backgroundColor = targetInput.value;
-            setTimeout(() => document.body.style.backgroundColor = "#E8ECF3", 2000);
+            setTimeout(() => document.body.style.backgroundColor = "#fff", 2000);
         })
 
         li.addEventListener('mouseover', (e) => {
